@@ -3,6 +3,7 @@
 -- ~/tv/qry_predictions12.sql
 --
 
+-- Look at Bearish predictions:
 SELECT 
 COUNT(tkr)                     ccount
 ,ROUND(AVG(ng3),4)             avg_ng3
@@ -12,6 +13,7 @@ FROM predictions12
 WHERE prob<0.45
 ;
 
+-- Look at Bullish predictions:
 SELECT 
 COUNT(tkr)                     ccount
 ,ROUND(AVG(ng3),4)             avg_ng3
@@ -21,7 +23,7 @@ FROM predictions12
 WHERE prob>0.55
 ;
 
--- Look at Bearish predictions:
+-- Look at Bearish predictions for each ticker:
 SELECT 
 tkr
 ,COUNT(tkr)                    ccount
@@ -35,7 +37,7 @@ HAVING COUNT(tkr) > 9
 ORDER BY SUM(ng3)
 ;
 
--- Look at Bullish predictions:
+-- Look at Bullish predictions for each ticker:
 SELECT 
 tkr
 ,COUNT(tkr)                    ccount
