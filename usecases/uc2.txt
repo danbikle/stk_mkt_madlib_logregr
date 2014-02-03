@@ -1,0 +1,100 @@
+~/ml/usecases/uc2.txt
+
+Use cases related to operation.
+
+I need to login to postgres account:
+  login to my account
+  one time only:
+    sudo passwd postgres
+  ssh postgres@localhost
+
+I need to see if postgres is running:
+  ps -ef|grep postgres
+
+I need to login to postgres instance as postgres:
+  ssh postgres@localhost
+  psql
+
+Assuming postgres installation has been done already,
+I need to create an account (aka Role or User) in postgres:
+  ssh postgres@localhost
+  psql
+  CREATE USER daniel WITH LOGIN SUPERUSER PASSWORD 'ddann';
+
+I need to logout:
+  \q
+
+Assuming postgres installation has been done already,
+I need to shutdown postgres instance:
+  su
+  sudo /etc/init.d/postgresql-9.2 stop
+
+I need to start postgres instance:
+  su
+  sudo /etc/init.d/postgresql-9.2 start
+
+I need to see if Madlib installed:
+  /usr/local/madlib/bin/madpack -p postgres -c madlib@127.0.0.1/madlib install-check
+
+
+dan@madlibsvm ~/ml/usecases $ 
+dan@madlibsvm ~/ml/usecases $   /usr/local/madlib/bin/madpack -p postgres -c madlib@127.0.0.1/madlib install-check
+Password for user madlib: 
+madpack.py : INFO : Detected PostgreSQL version 9.2.
+TEST CASE RESULT|Module: array_ops|array_ops.sql_in|PASS|Time: 550 milliseconds
+TEST CASE RESULT|Module: bayes|bayes.sql_in|PASS|Time: 533 milliseconds
+TEST CASE RESULT|Module: cart|dt_utility_test.sql_in|PASS|Time: 74 milliseconds
+TEST CASE RESULT|Module: cart|dt_test.sql_in|PASS|Time: 8683 milliseconds
+TEST CASE RESULT|Module: elastic_net|elastic_net_install_check.sql_in|PASS|Time: 3258 milliseconds
+TEST CASE RESULT|Module: linalg|svd.sql_in|PASS|Time: 1731 milliseconds
+TEST CASE RESULT|Module: linalg|matrix_op.sql_in|PASS|Time: 834 milliseconds
+TEST CASE RESULT|Module: linalg|linalg.sql_in|PASS|Time: 121 milliseconds
+TEST CASE RESULT|Module: lda|lda.sql_in|PASS|Time: 331 milliseconds
+TEST CASE RESULT|Module: prob|prob.sql_in|PASS|Time: 388 milliseconds
+TEST CASE RESULT|Module: pca|pca_project.sql_in|PASS|Time: 2230 milliseconds
+TEST CASE RESULT|Module: pca|pca.sql_in|PASS|Time: 3682 milliseconds
+TEST CASE RESULT|Module: quantile|quantile.sql_in|PASS|Time: 78 milliseconds
+TEST CASE RESULT|Module: sketch|support.sql_in|PASS|Time: 68 milliseconds
+TEST CASE RESULT|Module: sketch|mfv.sql_in|PASS|Time: 1413 milliseconds
+TEST CASE RESULT|Module: sketch|fm.sql_in|PASS|Time: 3102 milliseconds
+TEST CASE RESULT|Module: sketch|cm.sql_in|PASS|Time: 10462 milliseconds
+TEST CASE RESULT|Module: stats|wsr_test.sql_in|PASS|Time: 102 milliseconds
+TEST CASE RESULT|Module: stats|t_test.sql_in|PASS|Time: 97 milliseconds
+TEST CASE RESULT|Module: stats|mw_test.sql_in|PASS|Time: 58 milliseconds
+TEST CASE RESULT|Module: stats|ks_test.sql_in|PASS|Time: 92 milliseconds
+TEST CASE RESULT|Module: stats|f_test.sql_in|PASS|Time: 67 milliseconds
+TEST CASE RESULT|Module: stats|cox_prop_hazards.sql_in|PASS|Time: 868 milliseconds
+TEST CASE RESULT|Module: stats|correlation.sql_in|PASS|Time: 204 milliseconds
+TEST CASE RESULT|Module: stats|chi2_test.sql_in|PASS|Time: 148 milliseconds
+TEST CASE RESULT|Module: stats|anova_test.sql_in|PASS|Time: 68 milliseconds
+TEST CASE RESULT|Module: summary|summary.sql_in|PASS|Time: 269 milliseconds
+TEST CASE RESULT|Module: svd_mf|svdmf.sql_in|PASS|Time: 702 milliseconds
+TEST CASE RESULT|Module: svec|svec_test.sql_in|PASS|Time: 1848 milliseconds
+TEST CASE RESULT|Module: svec|gp_sfv_sort_order.sql_in|PASS|Time: 87 milliseconds
+TEST CASE RESULT|Module: tsa|arima_train.sql_in|PASS|Time: 580 milliseconds
+TEST CASE RESULT|Module: tsa|arima.sql_in|PASS|Time: 585 milliseconds
+TEST CASE RESULT|Module: assoc_rules|assoc_rules.sql_in|PASS|Time: 244 milliseconds
+TEST CASE RESULT|Module: conjugate_gradient|conj_grad.sql_in|PASS|Time: 114 milliseconds
+TEST CASE RESULT|Module: crf|crf_train_small.sql_in|PASS|Time: 657 milliseconds
+TEST CASE RESULT|Module: crf|crf_train_large.sql_in|PASS|Time: 2641 milliseconds
+TEST CASE RESULT|Module: crf|crf_test_small.sql_in|PASS|Time: 249 milliseconds
+TEST CASE RESULT|Module: crf|crf_test_large.sql_in|PASS|Time: 316 milliseconds
+TEST CASE RESULT|Module: data_profile|data_profile.sql_in|PASS|Time: 150 milliseconds
+TEST CASE RESULT|Module: kernel_machines|kernel_mach.sql_in|PASS|Time: 4254 milliseconds
+TEST CASE RESULT|Module: linear_systems|sparse_linear_sytems.sql_in|PASS|Time: 327 milliseconds
+TEST CASE RESULT|Module: linear_systems|dense_linear_sytems.sql_in|PASS|Time: 275 milliseconds
+TEST CASE RESULT|Module: compatibility|compatibility.sql_in|PASS|Time: 119 milliseconds
+TEST CASE RESULT|Module: convex|ridge_and_lasso.sql_in|PASS|Time: 75 milliseconds
+TEST CASE RESULT|Module: convex|lmf.sql_in|PASS|Time: 3150 milliseconds
+TEST CASE RESULT|Module: convex|cross_validation.sql_in|PASS|Time: 994 milliseconds
+TEST CASE RESULT|Module: regress|robust.sql_in|PASS|Time: 468 milliseconds
+TEST CASE RESULT|Module: regress|multilogistic.sql_in|PASS|Time: 186 milliseconds
+TEST CASE RESULT|Module: regress|marginal.sql_in|PASS|Time: 699 milliseconds
+TEST CASE RESULT|Module: regress|logistic.sql_in|PASS|Time: 7911 milliseconds
+TEST CASE RESULT|Module: regress|linear.sql_in|PASS|Time: 221 milliseconds
+TEST CASE RESULT|Module: regress|clustered.sql_in|PASS|Time: 446 milliseconds
+TEST CASE RESULT|Module: sample|sample.sql_in|PASS|Time: 754 milliseconds
+TEST CASE RESULT|Module: kmeans|kmeans.sql_in|PASS|Time: 1174 milliseconds
+dan@madlibsvm ~/ml/usecases $ 
+dan@madlibsvm ~/ml/usecases $ 
+
