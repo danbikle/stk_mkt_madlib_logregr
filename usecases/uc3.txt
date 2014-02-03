@@ -2,5 +2,28 @@
 
 Use cases related to Yahoo data.
 
+I need to get some data for SPY from Yahoo:
+  mkdir -p /tmp/ydata/
+  cd       /tmp/ydata/
+  wget --output-document=SPY.csv  http://ichart.finance.yahoo.com/table.csv?s=SPY 
+
+I need to get some data for several tickers from Yahoo:
+  https://github.com/danbikle/stk_mkt_madlib_logregr/blob/master/wget_ydata.bash
+
+I need a demo script of removing stock-split discontinuities:
+  https://github.com/danbikle/stk_mkt_madlib_logregr/blob/master/update_closing_price.sql
+
+I need a flatfile which lists stock-split discontinuities:
+  https://github.com/danbikle/heuristics/blob/master/tkr_split_dates.csv
+
+I need to build a script which removes stock-split discontinuities:
+  https://github.com/danbikle/heuristics/blob/master/cr_upd_cp.bash
+
+I need a flatfile of interesting tickers:
+  https://github.com/danbikle/heuristics/blob/master/tkrlist.txt
+
+I need to download data corresponding to flatfile of interesting tickers:
+  https://github.com/danbikle/heuristics/blob/master/wget_ydata.bash
+  https://github.com/danbikle/heuristics/blob/master/dlcsv_yahoo.bash
 
 
