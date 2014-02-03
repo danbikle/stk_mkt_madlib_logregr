@@ -1,0 +1,59 @@
+~/ml/usecases/uc1.txt
+
+Use cases related to installation.
+
+I need to decide which OS to use.
+
+  Why CentOS?
+  Ans: http://madlib.net/download/
+
+I need to setup a CentOS Linux development environment.
+
+  If you have windows 8 and intel,
+  you may need to wrestle with BIOS:
+
+  http://www.bikle.com/techtips/cygwin#vbox
+
+  Some solutions via google:
+
+  https://www.google.com/search?q=How+do+I+install+virtualbox+on+windows
+
+  https://www.google.com/search?q=How+do+I+install+CentOS+on+virtualbox
+
+  https://www.google.com/search?q=How+do+I+install+CentOS+on+AWS
+    http://wiki.centos.org/Cloud/AWS
+      https://aws.amazon.com/marketplace/pp/B00A6KUVBW
+
+  https://www.google.com/search?q=How+do+I+install+CentOS+on+NephoScale
+
+
+I need to install Postgres on CentOS
+
+  http://www.bikle.com/techtips/two#madlib
+
+  Some solutions via google:
+
+  https://www.google.com/search?q=How+do+I+install+Postgres+on+CentOS+6.4
+  http://wiki.postgresql.org/wiki/YUM_Installation
+
+I need to install Madlib on Postgres
+
+  Out of date:
+    http://www.bikle.com/techtips/two#madlib
+
+  Probably optimal:
+    http://madlib.net/download/
+    https://github.com/madlib/madlib/wiki/Installation-Guide
+
+  Some solutions via google:
+
+  https://www.google.com/search?q=How+do+I+install+Madlib+on+Postgres
+
+
+
+
+
+
+
+
+
