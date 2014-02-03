@@ -1,6 +1,6 @@
 ~/ml/usecases/uc2.txt
 
-Use cases related to operation.
+Use cases related to operation of Postgres and MADlib.
 
 I need to login to postgres account:
   login to my account
@@ -19,7 +19,17 @@ Assuming postgres installation has been done already,
 I need to create an account (aka Role or User) in postgres:
   ssh postgres@localhost
   psql
-  CREATE USER daniel WITH LOGIN SUPERUSER PASSWORD 'ddann';
+  CREATE USER madlib WITH LOGIN SUPERUSER PASSWORD 'madlib;
+
+Assuming postgres installation has been done already,
+I need to create a database named madlib:
+  ssh postgres@localhost
+  psql
+  CREATE DATABASE madlib;
+
+Assuming postgres installation has been done already,
+I need to login to madlib database as madlib user:
+  PGPASSWORD=madlib psql -h 127.0.0.1 -U madlib -d madlib -p 5432 -P pager=no
 
 I need to logout:
   \q
@@ -33,7 +43,7 @@ I need to start postgres instance:
   su
   sudo /etc/init.d/postgresql-9.2 start
 
-I need to see if Madlib installed:
+I need to see if MADlib installed:
   /usr/local/madlib/bin/madpack -p postgres -c madlib@127.0.0.1/madlib install-check
 
 

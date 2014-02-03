@@ -1,7 +1,8 @@
 ~/ml/usecases/uc1.txt
 
-Use cases related to installation.
+Use cases related to installation of Linux, Postgres, MADlib.
 
+Usecase #1:
 I need to decide which OS to use.
 
   Why CentOS?
@@ -34,9 +35,10 @@ I need to install Postgres on CentOS
   Some solutions via google:
 
   https://www.google.com/search?q=How+do+I+install+Postgres+on+CentOS+6.4
-  http://wiki.postgresql.org/wiki/YUM_Installation
+    Probably optimal:
+      http://wiki.postgresql.org/wiki/YUM_Installation
 
-I need to install Madlib on Postgres
+I need to install MADlib on Postgres
 
   Out of date:
     http://www.bikle.com/techtips/two#madlib
@@ -47,7 +49,7 @@ I need to install Madlib on Postgres
 
   Some solutions via google:
 
-  https://www.google.com/search?q=How+do+I+install+Madlib+on+Postgres
+  https://www.google.com/search?q=How+do+I+install+MADlib+on+Postgres
 
 
 
