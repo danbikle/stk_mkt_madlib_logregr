@@ -1,0 +1,23 @@
+~/ml/usecases/uc4.txt
+
+Use cases related to loading Yahoo data.
+
+
+I need a script to create a table to collect Yahoo data:
+  https://github.com/danbikle/stk_mkt_madlib_logregr/blob/master/postgres/cr_ydata.sql
+
+After I CREATE TABLE ydata,
+I need a demo of loading Yahoo data:
+  https://github.com/danbikle/stk_mkt_madlib_logregr/blob/master/postgres/psqlmad.bash
+  https://github.com/danbikle/stk_mkt_madlib_logregr/blob/master/postgres/load_ydata.bash
+
+
+I need a complicated demo of loading Yahoo data:
+  https://github.com/danbikle/heuristics/blob/master/pg/load_ydata.bash
+  
+I need examples of reporting on stocks loaded into table ydata:
+  https://github.com/danbikle/heuristics/blob/master/big_drops_rpt.sql
+  https://github.com/danbikle/heuristics/blob/master/big_drops_rpt.txt
+
+
+  

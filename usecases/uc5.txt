@@ -1,0 +1,10 @@
+~/ml/usecases/uc5.txt
+
+Use cases related to transforming Yahoo data into vectors for MADlib.
+
+
+I need a script to transform price into normalized gain:
+
+
+
+  

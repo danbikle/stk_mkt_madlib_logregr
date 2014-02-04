@@ -1,6 +1,6 @@
 ~/ml/usecases/uc3.txt
 
-Use cases related to Yahoo data.
+Use cases related to getting Yahoo data.
 
 I need to get some data for SPY from Yahoo:
   mkdir -p /tmp/ydata/
@@ -21,6 +21,11 @@ I need to build a script which removes stock-split discontinuities:
 
 I need a flatfile of interesting tickers:
   https://github.com/danbikle/heuristics/blob/master/tkrlist.txt
+
+I need websites which list interesting stocks:
+  http://www.marketgrader.com/MGMainWeb/barrons/barrons.jsp
+  http://www.marketgrader.com/MGMainWeb/barrons/components.jsp?indexID=5
+  http://www.barchart.com/stocks/percentdecline.php
 
 I need to download data corresponding to flatfile of interesting tickers:
   https://github.com/danbikle/heuristics/blob/master/wget_ydata.bash
