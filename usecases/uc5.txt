@@ -3,8 +3,13 @@
 Use cases related to transforming Yahoo data into vectors for MADlib.
 
 
-I need a script to transform price into normalized gain:
+I need a demo of how to transform price into normalized gain:
+  step 1:
+    LEAD(cp,1,NULL) OVER (partition by tkr ORDER BY ydate) AS ldp
+  step 2:
+  (ldp - cp) / cp AS ng
 
-
+  demo:
+    https://github.com/danbikle/heuristics/blob/master/big_drops_rpt.sql
 
   
